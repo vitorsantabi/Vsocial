@@ -62,3 +62,11 @@ arduino
 Copiar
 Editar
 http://localhost/Vsocial/
+
+📌 Observações
+Projeto com fins educacionais
+
+Pode ser expandido com recursos como comentários, curtidas, mensagens, notificações etc.
+
+👨‍💻 Autor
+Vitor Santana
