@@ -65,11 +65,11 @@ http://localhost/Vsocial/
 
 ##📸 Telas do Projeto
 
+
 ![Captura de tela 2025-06-17 101427](https://github.com/user-attachments/assets/14753e4b-3260-4a69-9cf7-7b70726100e2)
-![Captura de tela 2025-06-17 101427](https://github.com/user-attachments/assets/14753e4b-3260-4a69-9cf7-7b70726100e2)
+
 ![Captura de tela 2025-06-17 101402](https://github.com/user-attachments/assets/4ff9fa21-4511-47a8-8aad-54ec6143dcd6)
-![Captura de tela 2025-06-17 101402](https://github.com/user-attachments/assets/4ff9fa21-4511-47a8-8aad-54ec6143dcd6)
-![Captura de tela 2025-06-17 101353](https://github.com/user-attachments/assets/bdaefc29-05b1-411f-9aa4-65240c4c4ff5)
+
 ![Captura de tela 2025-06-17 101353](https://github.com/user-attachments/assets/bdaefc29-05b1-411f-9aa4-65240c4c4ff5)
  
 
