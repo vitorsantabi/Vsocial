@@ -1,0 +1,336 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../assets/bg1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: left 0.3s ease;
+        height: 100vh;
+        overflow-y: auto;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.788);
+    }
+
+    .nav-links span {
+
+        & a {
+            width: 80%;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        & a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            width: 80%;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .user-profile {
+        display: none;
+    }
+
+    .usuarios_cadastrados {
+        padding: 20px;
+        margin-top: 60px;
+        position: relative;
+        bottom: 50px;
+        background: rgb(136, 179, 235);
+    }
+
+    .usuarios_cadastrados h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    .profile-card {
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .profile-card img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .cad_username {
+        flex: 1;
+
+    }
+
+    .cad_username strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #000;
+        font-size: 1.1rem;
+    }
+
+    .cad_username small {
+        color: #000;
+        font-weight: 400;
+         font-size: .8rem;
+    }
+
+    .main-content {
+        padding-bottom: 70px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .user-profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        border: solid 3px #cecece;
+    }
+
+    .case {
+        background: rgb(0, 0, 0);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(17.7px);
+        -webkit-backdrop-filter: blur(17.7px);
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .nome_bio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .nome_bio strong {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 5px;
+
+    }
+
+    /* Ajustes para botões e inputs */
+    button,
+    input,
+    textarea {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Ajustes para links */
+    a {
+        padding: 8px;
+        display: block;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        display: flex;
+        gap: 10px;
+    }
+
+    .hamburger-menu button {
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .hamburger-menu button i {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .show-users-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2000;
+        background: #fff;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .usuarios-popup {
+        display: none;
+        position: fixed;
+        z-index: 3000;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s;
+    }
+
+    .usuarios-popup.active {
+        display: flex;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .popup-content {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px 16px 16px 16px;
+        max-width: 90vw;
+        width: 350px;
+        max-height: 80vh;
+        overflow-y: auto;
+        position: relative;
+        animation: popupIn 0.4s;
+    }
+
+    @keyframes popupIn {
+        from {
+            transform: translateY(40px) scale(0.95);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .close-popup-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 2em;
+        color: #888;
+        cursor: pointer;
+    }
+
+    .refresh-users-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: none;
+        border: none;
+        font-size: 1.3em;
+        color: #888;
+        cursor: pointer;
+    }
+
+    .popup-user-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #cecece;
+        margin-right: 10px;
+    }
+}
+
+/* Dispositivos muito pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .user-profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .case {
+        padding: 10px;
+    }
+
+    .nome_bio strong {
+        font-size: 1.1em;
+    }
+}
